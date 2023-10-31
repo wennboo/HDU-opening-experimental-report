@@ -1,0 +1,188 @@
+% !Mode:: "TeX:UTF-8"
+
+%%%%%%%%%%\documentclass[bachelor_p]{hdu-report}[]中不同的选项对于不同的模板%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%bachelor_p %%%%%%本科生模板
+%%master_p %%%%%%硕士生模板
+%%doctor_p %%%%%%博士生模板
+%%course_p %%%%%%课程报告、课程实验报告、课程思政报告
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[course_p]{hdu-report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%基本信息填写%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{杭州电子科技大学Latex毕业论文模板使用方法}{Munual of latex on thesis for HDU}%%%题目，英文部分{}内可以不填
+\author{张三}{San Zhang}%%%%%%作者，英文部分{}内可以不填
+\advisor{王老师}{Teacher Wang}%%%%%%指导老师，英文部分{}内可以不填
+\school{自动化学院}{School of Automation}%%%%学院，英文部分{}内可以不填
+\major{控制科学与工程}{Control Science and Engineering}%%%%%%%%%%专业，英文部分{}内可以不填
+\authornumber{20212021}%%%%%%学号
+\authorclass{171819} %%%%%%%%%班级
+\course{机器学习}{思政报告} %%%%非开题报告填写：第一项课程名称，第二项写报告类型，如实验报告、思政等
+\completedate{2022}{2}{Feb}  %%%%%%设计完成时间
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%%%%%%%%%%%加载封面%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makecover
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%正文%%%%%%%%%%%%%%%%%%%%
+\section{综述本课题国内外研究动态，说明选题的依据和意义}
+\subsection{模板配置}
+根据毕业类型选择不同的模板，\verb+\documentclass[bachelor_p]{hdu-report}[]+中不同的模式配置对应不同的模板，具体见下图或README.md。
+ \begin{figure}[!htb]
+  \centering
+  \includegraphics[width=1\textwidth]{模板选择}
+  \caption{documentclass模板配置}
+\end{figure}
+\subsection{软件环境}
+\textcolor{red}{下载最新texlive配合vscode}
+其中，texlive配合vscode可参考以下网址:\\
+\url{https://zhuanlan.zhihu.com/p/166523064}，或者 \href{https://zhuanlan.zhihu.com/p/38178015}{知乎-使用VSCode编写LaTeX}。
+pdf预览可用\\
+vscode的latex-workshop.view.pdf.viewer预览，支持双击反向搜索。
+
+\textcolor{red}{VSCode的latex插件安装后的具体配置，参考README.md文档末尾说明。}
+
+配置完如下图所示，红色是需要用到的指令（如图\ref{fig_vs_latex})，
+ \begin{figure}[!htb]
+  \centering
+  \includegraphics[width=1\textwidth]{vscode-latex}
+  \caption{vscode配置latex}
+  \label{fig_vs_latex}
+\end{figure}
+
+\subsection{指令}
+\subsubsection{编译指令}
+如果先不编译参考文献，只编译正文的话只需点Xelatex，想编译参考文献并生成参考文献目录，需依次点击 Xelatex-B-Xelatex-Xelatex\footnote{脚注}。指令见图\ref{fig_vs_latex}。
+
+%%%%%%%%%%%%%%%还可以通过导入独立文件来编写%%%%%%%%%%
+
+\subsection{参考文献引用说明}
+参考文献有两种格式引入\verb+\cite{}+以及\verb+\citep{}+。使用效果可见下面介绍:\\
+1.插入会议inproceedings\cite{zhao2015bearing0}\\
+2.插入教材课本book\cite{williams1991probability,chengzhaolin2006}\\
+3.插入期刊article\cite{cao2011formation,xue2015formation}，期刊上标\citep{xue2015formation}\\
+4.插入硕博论文thesis\cite{lisi2015,wangwu2015,deans2005bearings}\\
+5.插入网站misc\cite{irdawebsite,h7n9,wikipedia_moores_law}\\
+6.插入专利patent\cite{xiao2012yi,p6915001}\\
+7.插入新闻news报纸newspaper\cite{zhang2000,renminribao}\\
+8.插入标准standard\cite{gbt3469-1983}\\
+\textcolor{red}{注意：参考文献格式不正确可能导致编译不通过，大家可以参考本工程中reference.bib中文献格式对网上下载不规范的bibtex文件进行修改。此外，如果上述类型里面条目有缺失会会导致编译不能输出正确格式。}关于参考文献不同类型的进一步详细的说明可参考网站https://github.com/Haixing-Hu/GBT7714-2005-BibTeX-Style
+里面的测试模板。
+
+
+
+\textcolor{red}{注意1：参考文献格式不正确可能导致编译不通过，大家可以参考本工程中reference.bib中文献格式对网上下载不规范的bibtex文件进行修改。此外，如果上述类型里面条目有缺失会会导致编译不能输出正确格式。}
+
+关于参考文献不同类型的进一步详细的说明可参考网站https://github.com/Haixing-Hu/GBT7714-2005-BibTeX-Style
+里面的测试模板。
+
+
+\textcolor{red}{注意2：对于中文参考文献，为了保证格式正确，最好需在对应bib里面添加language={zh}，不加会默认当做英文文献处理。区别如图\ref{fig_bib0}。}
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=1\textwidth]{中英文文献bib编译注意事项}
+  \caption{中英文文献bib编译注意事项以作者超过3个为例进行说明}
+  \label{fig_bib0}
+\end{figure}
+
+
+\subsection{参考文献的查找与引用}
+
+
+多智能体系统\citep{cao2011formation}。
+可以通过百度学术搜索查找参考文献（如图\ref{fig_search0})，
+ \begin{figure}[!htb]
+  \centering
+  \includegraphics[width=1\textwidth]{文献搜索说明0}
+  \caption{参考文献的百度学术搜索.}
+  \label{fig_search0}
+\end{figure}
+点击bibtex，然后复制到目录文件夹中的bib文件（如图\ref{fig_search1})。此时可以调用指令为\citep{薛瑞彬2015具有时延及联合连通拓扑的多飞行器分布式协同编队飞行控制研究}。但是此时标签太长，可以适当修改标签再引用，例如把bib中的标签（第一行）的``薛瑞彬2015具有时延及联合连通拓扑的多飞行器分布式协同编队飞行控制研究"改成``xue2015formation"，指令为\verb+\cite{xue2015formation}+，效果为\cite{xue2015formation}。如果进一步想管理参考文献，可新建几个bib文件并用\verb+\bibliography{en_ref,cn_ref,...}+完成。
+ \begin{figure}[!htb]
+  \centering
+  \includegraphics[width=1\textwidth]{文献搜索说明1}
+  \caption{参考文献复制到bib文件.}
+  \label{fig_search1}
+\end{figure}
+
+
+
+\input{contents/sectionA}
+
+%%%%%%%%%%%%%%%%%%%此文档中编写%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{研究步骤、方法及措施}
+\subsection{导入文件}
+所有要插入的图片可以放在pic文件夹下。同时支持独立章节内容的导入，具体操作为编写独立section文件放入contents目录，导入指令为\verb+\input{contents/sectionA}+。例如，下面章节导入sectionA文件。
+
+
+
+
+
+\section{研究工作进度}
+
+
+\begin{table}[h]
+\renewcommand\arraystretch{2.5}
+\centering
+\setlength{\tabcolsep}{12mm}{
+\begin{tabular}{|c|c|c|}
+\hline
+序号 & 时间                  & 内容      \\ \hline
+1  & 2020.12.22-2020.12.31 & 任务书 \\ \hline
+2  & 2021.01.01-2021.02.28  & 撰写开题报告 \\ \hline
+3  & 2021.03.01-2021.03.19  & 开题报告会 \\ \hline
+4  & 2021.03.20-2021.04.19 & 中期检查 \\ \hline
+5  & 2021.04.20-2021.05.19  & 撰写毕业论文 \\ \hline
+6  & 2021.05.20-2021.06.01  & 论文评审及查重 \\ \hline
+7  & 2021.06.02-2021.06.11   & 答辩报告会 \\ \hline
+8  & 2021.06.12-2021.06.20 & 资料归档整理 \\ \hline
+\end{tabular}}
+\end{table}
+
+%%%%%%%%%%%%%%%%参考文献%%%%%%%%%%%%%%%%%%%%%%
+\hdubibliography{ref/reference}
+
+
+\newpage
+
+\section{开题小组评审意见}
+\begin{table}[h]
+  \renewcommand\arraystretch{1.5}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{考核点} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}背景及意义\\ 阐述情况\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}研究方案与任务\\ 书的匹配程度\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}研究方法\\ 合理性\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}进度安排\\ 情况\end{tabular}} &
+  \textbf{答辩情况} &
+  \textbf{总分} \\ \hline
+\textbf{\begin{tabular}[c]{@{}c@{}}对应课程\\ 目标/毕\\ 业要求指\\ 标点\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}课程目标1/\\ 指标点2.1\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}课程目标2/指标\\ 点3.1\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}课程目标\\ 3/指标点\\ 5.2\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}课程目标\\ 7/指标点\\ 11.2\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}c@{}}课程目标\\ 5/指标点\\ 10.2\end{tabular}} &
+  \textbf{} \\ \hline
+\textbf{满分} & \textbf{20} & \textbf{25} & \textbf{20} & \textbf{10} & \textbf{25} & \textbf{100} \\ \hline
+\textbf{评分} & \textbf{}   & \textbf{}   & \textbf{}   & \textbf{}   & \textbf{}   & \textbf{}    \\ \hline
+\end{tabular}
+\end{table}
+\vspace{1cm}
+\begin{flushright}
+开题小组负责人签字：\_\_\_\_\_\_\_\_\_\_\_\_\ \ \ \
+
+\vspace{1cm}
+年\ \ \ \ \ \ 月\ \ \ \ \ \ 日\ \ \ \ \ \ \ \
+\end{flushright}
+
+
+\end{document}
