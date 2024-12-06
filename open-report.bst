@@ -1,7 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% This file  is built by WangBo (School of Automation,HDU), 
-%  2021.12.24, which is based on the following project under minor modification.
+% This file is made based on the following project.
 %(姓名样式的修改）
 %  作者：    胡海星   南京大学计算机科学与技术系
 %  版本：    v2.1.1  2015年6月15日

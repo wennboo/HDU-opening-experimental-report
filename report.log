@@ -1,12 +1,12 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.11.21)  24 JUL 2023 16:14
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2024.5.24)  10 OCT 2024 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main-report.tex
-(./main-report.tex
+**report.tex
+(./report.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (./hdu-report.cls
-Document Class: hdu-report 
+L3 programming layer <2021-02-18> (./open-report.cls
+Document Class: open-report 
 (d:/software/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (d:/software/texlive/2021/texmf-dist/tex/latex/base/size12.clo
@@ -56,7 +56,7 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidth=\dimen149
 \titlewidthlast=\dimen150
 \titlewidthfirst=\dimen151
- (d:/software/texlive/2021/texmf-dist/tex/latex/titlesec/titleps.sty)) (d:/software/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (d:/software/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
  (d:/software/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
@@ -161,8 +161,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip51
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 44.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 44.
+Package hyperref Info: Option `colorlinks' set `true' on input line 32.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 32.
  (d:/software/texlive/2021/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 ) (d:/software/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.sty (d:/software/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -769,8 +769,22 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count356
 ) (d:/software/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (./hdu-report.cfg
-File: hdu-report.cfg 
+) (./open-report.cfg
+File: open-report.cfg 
+) (d:/software/texlive/2021/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+ (d:/software/texlive/2021/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+) (d:/software/texlive/2021/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+) (d:/software/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+
+Package ifplatform Warning: 
+    shell escape is disabled, so I can only detect \ifwindows.
+
 )
 
 Package fontspec Info: Could not resolve font "SimSun/I" (it probably doesn't
@@ -798,68 +812,108 @@ Package fontspec Info: Font family 'SimSun(0)' created for font 'SimSun' with
 (fontspec)             <->"SimSun/OT:script=hani;language=dflt;embolden=4;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
+
+Package fontspec Info: Could not resolve font "SimHei/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "SimHei/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "SimHei/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
+(fontspec)             options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimHei/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Times
+(fontspec)             New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+
 \c@theorem=\count357
-\c@axiom=\count358
-\c@corollary=\count359
-\c@lemma=\count360
-\c@definition=\count361
-\c@proposition=\count362
-\c@problem=\count363
-\c@assumption=\count364
-\c@example=\count365
-\c@alogrithm=\count366
-\c@notation=\count367
 )
 
 LaTeX Warning: Unused global option(s):
     [openany].
 
-(./main-report.aux)
-\openout1 = `main-report.aux'.
+(./report.aux)
+\openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 23.
  (d:/software/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
 * driver: xetex
-* paper: a4paper
+* paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
-* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=426.79135pt
-* \textheight=674.33032pt
+* modes: twoside asymmetric 
+* h-part:(L,W,R)=(85.35826pt, 457.80486pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=457.80486pt
+* \textheight=652.70622pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-23.91173pt
-* \headheight=15.0pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
@@ -872,11 +926,11 @@ LaTeX Font Info:    ... okay on input line 27.
 * \mag=1000
 * \@twocolumnfalse
 * \@twosidetrue
-* \@mparswitchtrue
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 27.
+Package hyperref Info: Link coloring ON on input line 23.
 (d:/software/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (d:/software/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -884,110 +938,88 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (d:/software/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count368
+\c@section@level=\count358
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 27.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 27.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 27.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 27.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 27.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 27.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 27.
-LaTeX Font Info:    Redeclaring math accent \check on input line 27.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 27.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 27.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 27.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 27.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 23.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 23.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 23.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 23.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 23.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 23.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 23.
+LaTeX Font Info:    Redeclaring math accent \check on input line 23.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 23.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 23.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 23.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 23.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 23.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 23.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 23.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 23.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 23.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 23.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 23.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 23.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 23.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 23.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 23.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 23.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 27.
+(Font)              `operators' in the math version `normal' on input line 23.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 27.
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 23.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 27.
+(Font)              `operators' in the math version `bold' on input line 23.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 27.
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 23.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 27.
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 27.
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 27.
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 27.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 27.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 23.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 27.
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 27.
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 27.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 27.
-File: ./pic//HDUlogo.pdf Graphic file (type pdf)
-<use ./pic//HDUlogo.pdf>
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 23.
 
-Underfull \hbox (badness 4279) detected at line 29
-\TU/SimSun(0)/b/n/28 思 政 报 告
+Underfull \hbox (badness 2735) detected at line 25
+\TU/SimSun(0)/b/n/28 杭 州 电 子 科 技 大 学
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+
+Underfull \hbox (badness 2856) detected at line 25
+\TU/SimSun(0)/b/n/24 毕 业 设 计  |（论 文）|  开 题 报 告
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
 (d:/software/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
  (d:/software/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: Could not resolve font "KaiTi/B" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: Could not resolve font "KaiTi/I" (it probably doesn't
-(fontspec)             exist).
-
-
-Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
-(fontspec)             options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
-
-Overfull \vbox (3.47752pt too high) detected at line 29
- []
-
-[1
+ [1
 
 ] [0]
 
@@ -995,82 +1027,105 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 (xeCJK)                
 (xeCJK)                Try to use `\setCJKmonofont[...]{...}' to define it.
 
-File: ./pic//模板选择.png Graphic file (type bmp)
-<./pic//模板选择.png>
 
-Overfull \hbox (17.1899pt too wide) in paragraph at lines 36--42
-[]\TU/SimSun(0)/m/n/12 根 据 毕 业 类 型 选 择 不 同 的 模 板，| [][]\TU/lmtt/m/n/12 \documentclass[bachelor_p]{hdu-report}[][]\TU/SimSun(0)/m/n/12 中
- []
+Package natbib Warning: Citation `zhao2015bearing0' on page 1 undefined on input line 48.
 
-File: ./pic//vscode-latex.png Graphic file (type bmp)
-<./pic//vscode-latex.png>
 
-Underfull \vbox (badness 2042) has occurred while \output is active []
+Package natbib Warning: Citation `williams1991probability' on page 1 undefined on input line 49.
 
- [1]
-Overfull \hbox (36.10065pt too wide) in paragraph at lines 82--84
-[]\TU/SimSun(0)/m/n/12 关 于 参 考 文 献 不 同 类 型 的 进 一 步 详 细 的 说 明 可 参 考 网 站 \TU/lmr/m/n/12 https://github.com/Haixing-
- []
 
-[2]
+Package natbib Warning: Citation `chengzhaolin2006' on page 1 undefined on input line 49.
+
+
+Package natbib Warning: Citation `zhangsan2007' on page 1 undefined on input line 49.
+
+
+Package natbib Warning: Citation `cao2011formation' on page 1 undefined on input line 50.
+
+
+Package natbib Warning: Citation `xue2015formation' on page 1 undefined on input line 50.
+
+
+Package natbib Warning: Citation `lisi2015' on page 1 undefined on input line 51.
+
+
+Package natbib Warning: Citation `wangwu2015' on page 1 undefined on input line 51.
+
+
+Package natbib Warning: Citation `deans2005bearings' on page 1 undefined on input line 51.
+
+
+Package natbib Warning: Citation `irdawebsite' on page 1 undefined on input line 52.
+
+
+Package natbib Warning: Citation `h7n9' on page 1 undefined on input line 52.
+
+
+Package natbib Warning: Citation `wikipedia_moores_law' on page 1 undefined on input line 52.
+
+
+Package natbib Warning: Citation `xiao2012yi' on page 1 undefined on input line 53.
+
+
+Package natbib Warning: Citation `p6915001' on page 1 undefined on input line 53.
+
+
+Package natbib Warning: Citation `zhang2000' on page 1 undefined on input line 54.
+
+
+Package natbib Warning: Citation `renminribao' on page 1 undefined on input line 54.
+
+
+Package natbib Warning: Citation `gbt3469-1983' on page 1 undefined on input line 55.
+
 File: ./pic//中英文文献bib编译注意事项.png Graphic file (type bmp)
 <./pic//中英文文献bib编译注意事项.png>
+
+Package natbib Warning: Citation `cao2011formation' on page 1 undefined on input line 80.
+
 File: ./pic//文献搜索说明0.jpg Graphic file (type bmp)
 <./pic//文献搜索说明0.jpg>
+
+Package natbib Warning: Citation `薛瑞彬2015具有时延及联合连通拓扑的多飞行器分布式协同编队飞行控制研究' on page 1 undefined on input line 88.
+
+
+Package natbib Warning: Citation `xue2015formation' on page 1 undefined on input line 88.
+
 File: ./pic//文献搜索说明1.png Graphic file (type bmp)
 <./pic//文献搜索说明1.png>
- (./contents/sectionA.tex [3]
-File: ./pic//mathtype配置.png Graphic file (type bmp)
-<./pic//mathtype配置.png>
- [4]
-Underfull \vbox (badness 2591) has occurred while \output is active []
 
- [5]
-Overfull \hbox (6.71791pt too wide) in paragraph at lines 56--57
-[]\TU/SimSun(0)/m/n/12 首 先 需 要 去 掉 [][]\TU/lmtt/m/n/12 \[[]\TU/SimSun(0)/m/n/12 以 及[][]\TU/lmtt/m/n/12 \][]\TU/SimSun(0)/m/n/12 符 号，|  然 后 用[][]\TU/lmtt/m/n/12 \begin{equation}\TU/SimSun(0)/m/n/12 以及\TU/lmtt/m/n/12 \end{equation}[]\TU/SimSun(0)/m/n/12 来
- []
+Underfull \vbox (badness 3872) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
+ [1] (./contents/sectionA.tex
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/m/it' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 130.
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 21.
 
-File: ./pic//定理环境.png Graphic file (type bmp)
-<./pic//定理环境.png>
-[8])
-Overfull \hbox (53.00754pt too wide) in paragraph at lines 123--124
-\TU/SimSun(0)/m/n/12 体 操 作 为 编 写 独 立 \TU/lmr/m/n/12 section \TU/SimSun(0)/m/n/12 文 件 放 入 \TU/lmr/m/n/12 contents \TU/SimSun(0)/m/n/12 目 录，|  导 入 指 令 为[][]\TU/lmtt/m/n/12 \input{contents/sectionA}[]\TU/SimSun(0)/m/n/12 。|
- []
+[2] [3])
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 1297) has occurred while \output is active []
-
- [9] (./main-report.bbl
-Underfull \vbox (badness 3118) has occurred while \output is active []
-
- [10]) [11]
-Overfull \hbox (36.96877pt too wide) in paragraph at lines 159--178
+ [4]
+No file report.bbl.
+[5]
+Overfull \hbox (14.59514pt too wide) in paragraph at lines 159--178
 [][] 
  []
 
-[12] (./main-report.aux)
+
+Package natbib Warning: There were undefined citations.
+
+[6] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 28748 strings out of 478312
- 573500 string characters out of 5847729
- 926188 words of memory out of 5000000
- 48105 multiletter control sequences out of 15000+600000
- 417464 words of font info for 113 fonts, out of 8000000 for 9000
- 306 hyphenation exceptions out of 8191
- 128i,18n,130p,426b,508s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28691 strings out of 478866
+ 578836 string characters out of 5864661
+ 928495 words of memory out of 5000000
+ 47972 multiletter control sequences out of 15000+600000
+ 417720 words of font info for 123 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 128i,14n,130p,421b,559s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main-report.pdf (14 pages).
+Output written on report.pdf (8 pages).
